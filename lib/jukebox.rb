@@ -47,7 +47,7 @@ def run(songs)
   loop do
     puts "Please enter a command:"
     command = gets.strip
-    if user_input == "play"
+    if command == "play"
       play(songs)
     elsif command == "help"
       help
