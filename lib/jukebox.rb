@@ -54,10 +54,14 @@ def run(songs)
       play(songs)
     elsif command == "help"
       help
+      break
+      
     else
       puts "Invalid command, please try again"
     end
   end
-  exit_jukebox if command == 'exit'
+  if command == 'exit' 
+    exit_jukebox
+  end
 end
   
